@@ -1,3 +1,7 @@
+http = require 'http'
+fs = require 'fs'
+word_parser = require './word_parser.coffee'
+
 Object.prototype.clone = (obj) ->
   return obj  if obj is null or typeof (obj) isnt "object"
   temp = new obj.constructor()
